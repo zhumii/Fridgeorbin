@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #000 url("assets/Background/bg-kulkas.png") no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* --- Transisi layar --- */
+.screen {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  width: 350px;
+  transition: opacity 0.6s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0; transform: scale(0.95); }
+}
+
+/* --- Game Container --- */
+#game-container {
+  background-image: url("assets/background/polos.png");
+}
+
+/* Top bar */
+#top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Game Area */
+#game-area {
+  margin: 20px 0;
+}
+
+#foodImage {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/* Buttons */
+#buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#buttons button:last-child {
+  background: #f44336;
+}
+
+#buttons button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* --- Loading Bar --- */
+#loading-container {
+  width: 100%;
+  height: 30px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+#loading-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(270deg, #4caf50, #8bc34a, #cddc39);
+  background-size: 600% 600%;
+  animation: gradientMove 2s infinite linear;
+  transition: width 0.2s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+#loading-text {
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+  text-align: center;
+}
