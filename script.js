@@ -74,9 +74,9 @@ let foods = [
   { img: "assets/food_rotten/stroberi-basi.png", exp: "2023-09-01" },
   { img: "assets/food_rotten/tahu-basi.png", exp: "2023-08-19" },
   { img: "assets/food_rotten/tomat-basi.png", exp: "2023-08-25" },
-  { img: "assets/food_rotten/kaleng-basi.png", exp: "2025-10-15" },
-  { img: "assets/food_rotten/burger-basi.png", exp: "2025-11-10" },
-  { img: "assets/food_rotten/pasta-basi.png", exp: "2025-07-24" },
+  { img: "assets/food_rotten/kaleng-basi.png", exp: "2023-10-15" },
+  { img: "assets/food_rotten/burger-basi.png", exp: "2023-11-10" },
+  { img: "assets/food_rotten/pasta-basi.png", exp: "2023-07-24" },
 ];
 
 // ---------------------
@@ -176,4 +176,5 @@ function restartGame() {
   leaderboard.classList.add("hidden");
   nameScreen.classList.remove("hidden");
 }
+
 
