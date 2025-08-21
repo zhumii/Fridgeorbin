@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: #000 url("assets/Background/bg-kulkas.png") no-repeat center center;
+  background: #000 url("assets/background/bg-kulkas.png") no-repeat center center;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -119,3 +119,4 @@ body {
   margin-top: 10px;
   text-align: center;
 }
+
